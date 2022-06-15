@@ -90,7 +90,7 @@
                         return;
                     }
 
-                    let speak = await fetch('https://api.streamelements.com/kappa/v2/speech?voice=Brian&text=' + encodeURIComponent(text.trim()));
+                    let speak = await fetch('https://api.streamelements.com/kappa/v2/speech?voice=Joey&text=' + encodeURIComponent(text.trim()));
 
                     if (speak.status != 200) {
                         alert(await speak.text());
